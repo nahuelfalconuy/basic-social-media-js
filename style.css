@@ -1,0 +1,69 @@
+/* // <uniquifier>: Use a unique and descriptive class name */
+/* // <weight>: Use a value from 100 to 900 */
+
+body{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    background-color: lightblue;
+    margin: 20px auto;
+    max-width: 50%;
+    text-align: center;
+}
+
+h1{
+    color: rgb(16, 58, 137);
+}
+
+button{
+    padding: 8px 12px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    background-color: rgb(16, 58, 137);
+    color: white;
+    border-radius: 4px;
+    transition: .5s all ease;
+}
+
+button:hover{
+    background-color: rgb(25, 80, 183);
+}
+
+form{
+    margin-top: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.postItem{
+    background-color:rgb(118, 159, 172);
+    border: 1px solid rgb(177, 210, 223);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+
+.editForm{
+    display: none;
+    margin-top: 12px;
+}

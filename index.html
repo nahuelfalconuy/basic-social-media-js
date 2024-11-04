@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Bird Social Media</h1>
+    <h2>Show Posts</h2>
+    <button onclick="getData()">Show Posts</button>
+    <ul id="postList"></ul>
+
+    <h2>What's happening?</h2>
+    <form id="postForm" onsubmit="event.preventDefault(); postData()"
+
+        <label for="postTitle">Title: </label>
+        <input type="text" id="postTitle" required>
+        <label for="postBody">Commentary</label>
+        <textarea type="text" id="postBody" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
