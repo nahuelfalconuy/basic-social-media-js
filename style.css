@@ -1,23 +1,19 @@
-/* // <uniquifier>: Use a unique and descriptive class name */
-/* // <weight>: Use a value from 100 to 900 */
-
-body{
+body {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+    font-variation-settings: "wdth" 100;
     background-color: lightblue;
     margin: 20px auto;
-    max-width: 50%;
+    max-width: 70%; /* Ampliamos ligeramente el ancho máximo */
     text-align: center;
 }
 
-h1{
+h1 {
     color: rgb(16, 58, 137);
 }
 
-button{
+button {
     padding: 8px 12px;
     border: none;
     margin: 5px;
@@ -28,42 +24,53 @@ button{
     transition: .5s all ease;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(25, 80, 183);
 }
 
-form{
+form {
     margin-top: 20px;
+    margin-bottom: 40px; /* Añadimos margen inferior para separar el formulario del final de la página */
 }
 
-label{
+label {
     display: block;
     margin-bottom: 5px;
 }
 
-input,textarea{
-    width: 100%;
+input, textarea {
+    width: calc(100% - 24px); /* Ajustamos el ancho para que se adapte mejor al padding */
     padding: 12px;
     margin-bottom: 12px;
-    box-sizing: border-box;
     font-size: 20px;
+    border-radius: 4px; /* Añadimos bordes redondeados */
+    border: 1px solid rgb(177, 210, 223); /* Borde similar al de .postItem para consistencia */
+    box-sizing: border-box; /* Aseguramos que el padding se incluya dentro del ancho total */
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
 }
 
-.postItem{
-    background-color:rgb(118, 159, 172);
+.postItem {
+    background-color: rgb(118, 159, 172);
     border: 1px solid rgb(177, 210, 223);
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 18px;
 }
 
-
-.editForm{
+.editForm {
     display: none;
     margin-top: 12px;
+    background-color: white; /* Fondo blanco para hacerlo más visible al mostrarse */
+    padding: 10px;
+    border: 1px solid rgb(177, 210, 223);
+    border-radius: 4px;
+}
+
+/* Clase reutilizable para ocultar elementos */
+.hidden {
+    display: none !important;
 }
